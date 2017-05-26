@@ -1,3 +1,7 @@
+var twitter = require("twitter");
+var request = requires("request");
+var spotify = requires("spotify");
+
 console.log('this is loaded');
 
 exports.twitterKeys = {
