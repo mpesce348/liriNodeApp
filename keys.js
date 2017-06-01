@@ -1,12 +1,8 @@
-var twitter = require("twitter");
-var request = requires("request");
-var spotify = requires("spotify");
-
 console.log('this is loaded');
 
 exports.twitterKeys = {
-  consumer_key: '<input here>',
-  consumer_secret: '<input here>',
-  access_token_key: '<input here>',
-  access_token_secret: '<input here>',
+  consumer_key: 'PE8XeXha15GrWYwF610w9EVFB',
+  consumer_secret: 'SCpaHa7ud81Sw70YMfWqGWCBH4m5Qj4jWL4UU7dpnCehprfpYD',
+  access_token_key: '870400457696436224-GBdyU5HvciSd0WxuLZEjIvdlVXW0P1l',
+  access_token_secret: '6LAG2PuquSVSTtwxZTsbBTXu3IWrfxYeTSLvRPB0JALiw',
 }
