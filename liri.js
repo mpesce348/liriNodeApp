@@ -23,4 +23,17 @@ switch (command) {
 		say.doIt();
 		break;
 
-}
+};
+
+function getSpotify() {
+        
+        var artist = process.argv[3];
+        // Running an initial search to identify the artist's unique Spotify id
+        var queryURL = "https://api.spotify.com/v1/search?q=" + artist + "&type=artist&limit=1";
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        }).done(function(response) {
+        	console.log(response);
+        })
+    };
