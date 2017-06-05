@@ -7,14 +7,3 @@ exports.twitterKeys = {
   access_token_secret: '6LAG2PuquSVSTtwxZTsbBTXu3IWrfxYeTSLvRPB0JALiw',
 }
 
-exports.spotifyKeys = {
-
-}
-
-exports.requestKeys = {
-
-}
-
-exports.omdbKeys = {
-	
-}

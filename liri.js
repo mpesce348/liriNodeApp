@@ -2,6 +2,7 @@ var tweet = require("twitter");
 var say = requires("request");
 var song = requires("spotify");
 var movie = requires("omdb");
+var fs = requires("fs");
 
 var command = process.argv[2];
 
@@ -40,10 +41,28 @@ function getSong() {
 
 function getTweets() {
 
+
+    var client = new tweet({
+        consumer_key: '',
+        consumer_secret: '',
+        access_token_key: '',
+        access_token_secret: ''
+    });
+
+    var params = {
+        screen_name: 'nodejs'
+    };
+    client.get('statuses/user_timeline', params, function(error, tweets, response) {
+        if (!error) {
+            console.log(tweets);
+        }
+    });
 };
+
 function getMovie() {
 
 };
+
 function doIt() {
 
 };

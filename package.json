@@ -4,6 +4,7 @@
   "description": "language interpretation and recognition interface. will return my latest tweets, spotify data for music and omdb data for movies",
   "main": "keys.js",
   "dependencies": {
+    "file-system": "^2.2.2",
     "request": "^2.81.0",
     "spotify": "^0.3.0",
     "twitter": "^1.7.0"
