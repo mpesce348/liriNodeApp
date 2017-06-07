@@ -41,7 +41,7 @@ switch (command) {
 //function to pull ifo from spotify API
 function getSong(input) {
 	if (!input) {
-		//assigned default in case input not entered after command
+		//assigned as default in case input not entered after command
 		input = "never"+"gonna"+"give"+"you"+"up"; 
   }
   var queryUrl = 'https://api.spotify.com/v1/search?q=' + input + '&limit=5&type=track';	
@@ -68,7 +68,7 @@ function getTweets() {
   		access_token_secret: keys.twitterKeys.access_token_secret
     });
 
-tweets.get('statuses/user_timeline', twitterSearch, function(error, response) {
+tweets.get('statuses/user_timeline', tweetSearch, function(error, response) {
     if (error) {
       console.log(error);
     };
